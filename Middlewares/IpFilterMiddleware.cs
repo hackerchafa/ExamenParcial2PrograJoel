@@ -6,7 +6,7 @@ namespace ExamenApi.Middlewares
     public class IpFilterMiddleware
     {
         private readonly RequestDelegate _next;
-        private const string AllowedIp = "187.155.101.200";
+        private static readonly string[] AllowedIps = new[] { "127.0.0.1", "::1", "localhost", "187.155.101.200" };
 
         public IpFilterMiddleware(RequestDelegate next)
         {
@@ -16,7 +16,8 @@ namespace ExamenApi.Middlewares
         public async Task InvokeAsync(HttpContext context)
         {
             var remoteIp = context.Connection.RemoteIpAddress?.ToString();
-            if (remoteIp != AllowedIp)
+            // Permitir acceso solo si la IP es local, localhost, o la IP permitida original
+            if (remoteIp == null || (!AllowedIps.Contains(remoteIp) && !(remoteIp.StartsWith("192.168."))))
             {
                 context.Response.StatusCode = StatusCodes.Status403Forbidden;
                 await context.Response.WriteAsync("Access denied from this IP address.");
