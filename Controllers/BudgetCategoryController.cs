@@ -23,9 +23,13 @@ namespace ExamenApi.Controllers
             return Ok(new { total, items });
         }
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> GetById(string id)
         {
-            var item = await _service.GetByIdAsync(id);
+            if (!int.TryParse(id, out int parsedId))
+                return BadRequest(new { error = "El id debe ser un número entero mayor que 0, sin letras ni símbolos." });
+            if (parsedId <= 0)
+                return BadRequest(new { error = "Estás agregando un id negativo o cero, tiene que ser mayor que 0." });
+            var item = await _service.GetByIdAsync(parsedId);
             if (item == null) return NotFound();
             return Ok(item);
         }
@@ -50,11 +54,15 @@ namespace ExamenApi.Controllers
             return Ok(updated);
         }
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(string id)
         {
+            if (!int.TryParse(id, out int parsedId))
+                return BadRequest(new { error = "El id debe ser un número entero mayor que 0, sin letras ni símbolos." });
+            if (parsedId <= 0)
+                return BadRequest(new { error = "Estás agregando un id negativo o cero, tiene que ser mayor que 0." });
             try
             {
-                var result = await _service.DeleteAsync(id);
+                var result = await _service.DeleteAsync(parsedId);
                 if (!result) return NotFound();
                 return NoContent();
             }

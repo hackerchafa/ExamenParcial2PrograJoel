@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carlo\\ExamenParcial2PrograJoel\\ExamenApi.csproj": {}
+    "C:\\Users\\Lenovo\\ExamenParcial2Progra\\ExamenApi\\ExamenApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carlo\\ExamenParcial2PrograJoel\\ExamenApi.csproj": {
+    "C:\\Users\\Lenovo\\ExamenParcial2Progra\\ExamenApi\\ExamenApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlo\\ExamenParcial2PrograJoel\\ExamenApi.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\ExamenParcial2Progra\\ExamenApi\\ExamenApi.csproj",
         "projectName": "ExamenApi",
-        "projectPath": "C:\\Users\\carlo\\ExamenParcial2PrograJoel\\ExamenApi.csproj",
-        "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlo\\ExamenParcial2PrograJoel\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\ExamenParcial2Progra\\ExamenApi\\ExamenApi.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\ExamenParcial2Progra\\ExamenApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -46,7 +46,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[9.0.6, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -54,9 +54,15 @@
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.13, )"
             },
@@ -70,7 +76,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[8.0.6, )"
             }
           },
           "imports": [
@@ -92,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
