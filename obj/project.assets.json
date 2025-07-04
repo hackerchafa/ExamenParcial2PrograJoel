@@ -3046,19 +3046,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carlo\\.nuget\\packages\\": {}
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlo\\ExamenParcial2PrograJoel\\ExamenApi.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\ExamenParcial2Progra\\ExamenApi\\ExamenApi.csproj",
       "projectName": "ExamenApi",
-      "projectPath": "C:\\Users\\carlo\\ExamenParcial2PrograJoel\\ExamenApi.csproj",
-      "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlo\\ExamenParcial2PrograJoel\\obj\\",
+      "projectPath": "C:\\Users\\Lenovo\\ExamenParcial2Progra\\ExamenApi\\ExamenApi.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lenovo\\ExamenParcial2Progra\\ExamenApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -3082,7 +3082,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -3142,7 +3142,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -3151,7 +3151,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "ExamenApi depende de Swashbuckle.AspNetCore (>= 8.0.6), pero no se encontró Swashbuckle.AspNetCore 8.0.6. Swashbuckle.AspNetCore 8.1.0 se resolvió en su lugar.",
+      "message": "ExamenApi depends on Swashbuckle.AspNetCore (>= 8.0.6) but Swashbuckle.AspNetCore 8.0.6 was not found. Swashbuckle.AspNetCore 8.1.0 was resolved instead.",
       "libraryId": "Swashbuckle.AspNetCore",
       "targetGraphs": [
         "net9.0"
