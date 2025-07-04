@@ -4,6 +4,6 @@ namespace ExamenApi.Models
     {
         public int Id { get; set; }
         public DateTime Month { get; set; }
-        public ICollection<BudgetCategory> Categories { get; set; }
+        public required ICollection<BudgetCategory> Categories { get; set; }
     }
 }
